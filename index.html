@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Campaign Website | Henry, Alice, Ella</title>
+
+  <link href="https://api.fontshare.com/v2/css?f[]=khand@700&f[]=montserrat@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ================= Loader ================= -->
+
+    <div id="page-loader" class="loader-wrap" aria-hidden="true">
+        <div class="loader-center">
+            <div class="glass-dumbbell">
+                <div class="side left-side">
+                  <div class="plate"></div>
+                  <div class="bar-half"></div>
+                </div>
+              
+                <div class="side right-side">
+                  <div class="bar-half"></div>
+                  <div class="plate"></div>
+                </div>
+              
+                <div class="fracture-line"></div>
+              </div>
+          
+          <p class="loader-text">Social Media Shatters</p>
+        </div>
+    
+        <div class="curtain curtain-left"></div>
+        <div class="curtain curtain-right"></div>
+    </div>
+  
+  <!-- ================= NAV ================= -->
+  <header class="site-header">
+    <nav class="pill-nav" aria-label="Primary">
+        <a href="#top" class="pill-link">Home</a>
+      <a href="#issue" class="pill-link">Issue</a>
+      <a href="#causes" class="pill-link">Causes</a>
+      <a href="#stats" class="pill-link">Stats</a>
+      <a href="#prevention" class="pill-link">Prevention</a>
+      <a href="#action" class="pill-link pill-cta">Take Action</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO / LANDING ================= -->
+  <main class="hero" id="top">
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <section class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-badge">
+          Health • G11 Awareness Campaign
+          <span class="dot"></span>
+          Sports Injury Prevention
+        </p>
+
+        <h1 class="hero-title">Train Smart. <span class="accent">Not Viral.</span></h1>
+
+        <p class="hero-subtitle">
+          Social media fitness trends push young athletes into unsafe workouts.
+          That pressure + misinformation leads to sprains, tears, and long-term injuries.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#issue">See the Risks</a>
+          <a class="btn btn-secondary" href="#prevention">Prevent Injuries</a>
+        </div>
+
+        <div class="hero-mini">
+          <div class="mini-card">
+            <span class="mini-title">Pressure</span>
+            <span class="mini-text">Train for views</span>
+          </div>
+          <div class="mini-card">
+            <span class="mini-title">Misinfo</span>
+            <span class="mini-text">Bad form spreads</span>
+          </div>
+          <div class="mini-card">
+            <span class="mini-title">Injury</span>
+            <span class="mini-text">Long recovery</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- IMPORTANT: stat-float is INSIDE social-stack now -->
+        <div class="social-stack" id="card-stack">
+          <div class="stat-float">
+            <div class="stat-title">Reality Check</div>
+            <div class="stat-big">Pain ≠ Progress</div>
+            <div class="stat-small">Listen to your body before it forces you to stop.</div>
+          </div>
+
+          <div class="post-card active">
+            <div class="post-top">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">fitdaily</div>
+                <div class="small">Trending</div>
+              </div>
+              <div class="tag">VIRAL</div>
+            </div>
+            <div class="post-body">
+              <div class="challenge">“No Rest Days Challenge”</div>
+              <div class="warning">High risk of overuse injuries</div>
+            </div>
+            <div class="post-bottom"><span>❤️ 142K</span><span>💬 9.1K</span></div>
+            <div class="injury-meter">
+                <div class="meter-label">
+                  <span class="meter-title">Injury Risk</span>
+                  <span class="meter-status">Tear Risk • Trend</span>
+                </div>
+              
+                <div class="meter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+                  <span class="meter-fill" style="width:82%"></span>
+                  <span class="meter-pin" style="left:82%"></span>
+                </div>
+              
+                <div class="meter-legend">
+                  <span class="lg green">Recovery</span>
+                  <span class="lg yellow">Strain</span>
+                  <span class="lg red">Tear Risk</span>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="post-card next">
+            <div class="post-top">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">gymgrind</div>
+                <div class="small">“Pain = Progress”</div>
+              </div>
+              <div class="tag tag2">HOT</div>
+            </div>
+            <div class="post-body">
+              <div class="challenge">“PR Every Day”</div>
+              <div class="warning">Increases strain & tear risk</div>
+            </div>
+            <div class="post-bottom"><span>🔥 88K</span><span>💬 4.3K</span></div>
+            <div class="injury-meter">
+                <div class="meter-label">
+                  <span class="meter-title">Injury Risk</span>
+                  <span class="meter-status">Tear Risk • Trend</span>
+                </div>
+              
+                <div class="meter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+                  <span class="meter-fill" style="width:70%"></span>
+                  <span class="meter-pin" style="left:70%"></span>
+                </div>
+              
+                <div class="meter-legend">
+                  <span class="lg green">Recovery</span>
+                  <span class="lg yellow">Strain</span>
+                  <span class="lg red">Tear Risk</span>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="post-card waiting">
+            <div class="post-top">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">form_police</div>
+                <div class="small">Ego Lifting</div>
+              </div>
+              <div class="tag">DANGER</div>
+            </div>
+            <div class="post-body">
+              <div class="challenge">“Heavy Squat Bounce”</div>
+              <div class="warning">High spinal compression risk</div>
+            </div>
+            <div class="post-bottom"><span>⚠️ 12K</span><span>💬 1.1K</span></div>
+            <div class="injury-meter">
+                <div class="meter-label">
+                  <span class="meter-title">Injury Risk</span>
+                  <span class="meter-status">Tear Risk • Trend</span>
+                </div>
+              
+                <div class="meter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+                  <span class="meter-fill" style="width:90%"></span>
+                  <span class="meter-pin" style="left:90%"></span>
+                </div>
+              
+                <div class="meter-legend">
+                  <span class="lg green">Recovery</span>
+                  <span class="lg yellow">Strain</span>
+                  <span class="lg red">Tear Risk</span>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="post-card waiting">
+            <div class="post-top">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">shredz_ui</div>
+                <div class="small">Dry Scooping</div>
+              </div>
+              <div class="tag tag2">TREND</div>
+            </div>
+            <div class="post-body">
+              <div class="challenge">“Pre-workout Dry Scoop”</div>
+              <div class="warning">Heart rate & choking hazards</div>
+            </div>
+            <div class="post-bottom"><span>🏋🏾‍♂️ 55K</span><span>💬 2.8K</span></div>
+            <div class="injury-meter">
+                <div class="meter-label">
+                  <span class="meter-title">Injury Risk</span>
+                  <span class="meter-status">Tear Risk • Trend</span>
+                </div>
+              
+                <div class="meter-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82">
+                  <span class="meter-fill" style="width:60%"></span>
+                  <span class="meter-pin" style="left:60%"></span>
+                </div>
+              
+                <div class="meter-legend">
+                  <span class="lg green">Recovery</span>
+                  <span class="lg yellow">Strain</span>
+                  <span class="lg red">Tear Risk</span>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="swipe-hint">Swipe right to clear <span>→</span></div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#issue" class="scroll-cue">
+      <span class="mouse"><span class="wheel"></span></span>
+      <span>Scroll</span>
+    </a>
+
+    
+  
+  </main>
+  <!-- ================= ISSUE SECTION ================= -->
+  <section class="section issue" id="issue">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-kicker">The Issue</p>
+        <h2 class="section-title">Social media is making training <span>more dangerous.</span></h2>
+        <p class="section-subtitle">
+          Fitness trends push teens into unsafe workouts. Misinformation spreads fast — and injuries follow.
+        </p>
+      </div>
+
+      <div class="issue-grid">
+        <article class="issue-card">
+          <div class="issue-icon">📱</div>
+          <h3 class="issue-title">Pressure + comparison</h3>
+          <p class="issue-text">
+            Social media influences the way we perceive ourselves and others in a negative way, specifically our bodies
+            and exercise. Obsession has become the norm.
+          </p>
+          <p class="issue-source">Patwardhan (2025)</p>
+        </article>
+
+        <article class="issue-card">
+          <div class="issue-icon">⚠️</div>
+          <h3 class="issue-title">Misinformation spreads</h3>
+          <p class="issue-text">
+            A systematic review found widespread physical activity misinformation on social media, including exercise
+            advice and rehabilitation.
+          </p>
+          <p class="issue-source">Thomas et al. (2025)</p>
+        </article>
+
+        <article class="issue-card highlight">
+          <div class="issue-icon">🎭</div>
+          <h3 class="issue-title">Unqualified influencers</h3>
+
+          <div class="issue-stats">
+            <div class="stat">
+              <span class="stat-big">60%</span>
+              <span class="stat-small">misleading / harmful info</span>
+            </div>
+            <div class="stat">
+              <span class="stat-big">95%</span>
+              <span class="stat-small">no relevant credentials</span>
+            </div>
+          </div>
+
+          <p class="issue-text small">
+            Australian researchers found 60% of 200 fitness influencer videos presented misleading or harmful information,
+            and 95% of posters didn’t have relevant health, fitness, or nutrition credentials.
+          </p>
+          <p class="issue-source">Yoon, CBC News (2024)</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= Causes ================= -->
+<section class="impact-section" id="causes">
+  <div class="container">
+
+    <div class="impact-head">
+      <span class="impact-kicker">Causes & Consequences</span>
+      <h2 class="impact-title">Why <span>fitness social media</span> becomes harmful</h2>
+      <p class="impact-subtitle">
+        The issue arises primarily from the unregulated nature of social media content creation. 
+        Anyone can post fitness advice regardless of qualifications, often prioritizing popularity, 
+        aesthetics, or engagement over accuracy. Algorithms amplify visually appealing or extreme content, 
+        such as dramatic transformations or intense workouts, which can distort perceptions of health and fitness.
+      </p>
+    </div>
+
+    <div class="impact-panel">
+
+      <!-- LEFT: CAUSES -->
+      <div class="impact-col">
+        <h3 class="impact-col-title">Main Causes</h3>
+
+        <ul class="impact-list">
+          <li class="impact-item">
+            <span class="impact-emoji">📲</span>
+            <div>
+              <strong>Unregulated fitness advice</strong>
+              <p>
+                Anyone can post fitness advice regardless of qualifications, prioritizing engagement over accuracy 
+                (Thomas et al., 2025).
+              </p>
+            </div>
+          </li>
+
+          <li class="impact-item">
+            <span class="impact-emoji">⚖️</span>
+            <div>
+              <strong>Social comparison</strong>
+              <p>
+                Users frequently compare themselves to influencers or peers who appear fitter or leaner, 
+                increasing pressure to conform to unrealistic standards (Blue, 2018).
+              </p>
+            </div>
+          </li>
+
+          <li class="impact-item">
+            <span class="impact-emoji">🧠</span>
+            <div>
+              <strong>Distorted perception of reality</strong>
+              <p>
+                Social media influences the way we perceive ourselves and others in a negative way, 
+                as we are often only exposed to one aspect of influencers’ lives (Patwardhan, 2025).
+              </p>
+            </div>
+          </li>
+
+          <li class="impact-item">
+            <span class="impact-emoji">❌</span>
+            <div>
+              <strong>Widespread misinformation</strong>
+              <p>
+                9039 records were screened (2016–2025), with 33 studies meeting inclusion criteria, 
+                highlighting misinformation across platforms such as YouTube, TikTok, Instagram, and Facebook 
+                (Thomas et al., 2025).
+              </p>
+            </div>
+          </li>
+
+          <li class="impact-item">
+            <span class="impact-emoji">🎯</span>
+            <div>
+              <strong>Algorithm amplification</strong>
+              <p>
+                Algorithms amplify extreme workouts and dramatic transformations, distorting perceptions of health and fitness.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="impact-quote">
+          <p>
+            “Gyms have become a part of a destructive machine that fueled self-hatred and comparison rather than a healthy habit.”
+          </p>
+          <span class="impact-cite">Patwardhan, 2025</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: IMPLICATIONS -->
+      <div class="impact-col">
+        <h3 class="impact-col-title">Mental & Physical Implications</h3>
+
+        <div class="implications-grid">
+
+          <div class="imp-block">
+            <div class="imp-label">🧩 Mental</div>
+            <ul class="imp-points">
+              <li>
+                Increased concern about one’s own weight, especially when viewers perceive similarity to the poster 
+                (Blue, 2018).
+              </li>
+              <li>
+                Obsession has become the norm, increasing pressure and dissatisfaction (Patwardhan, 2025).
+              </li>
+              <li>
+                Social comparison theory explains how upward comparison can make some individuals feel worse about themselves 
+                (Blue, 2018).
+              </li>
+            </ul>
+          </div>
+
+          <div class="imp-block">
+            <div class="imp-label">🦴 Physical</div>
+            <ul class="imp-points">
+              <li>
+                Misinformation topics include exercise advice, rehabilitation, weight loss, women’s health, 
+                and chronic conditions (Thomas et al., 2025).
+              </li>
+              <li>
+                Only 18% of studies examined spread dynamics, highlighting limited monitoring of misinformation spread 
+                (Thomas et al., 2025).
+              </li>
+              <li>
+                Unrealistic portrayals of bodies and performance can distort perceptions of health and fitness.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="impact-statbar">
+          <div class="stat-pill">
+            <span class="stat-num">9039</span>
+            <span class="stat-text">records screened (2016–May 2025)</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-num">33</span>
+            <span class="stat-text">studies met inclusion criteria</span>
+          </div>
+          <div class="stat-pill">
+            <span class="stat-num">82%</span>
+            <span class="stat-text">measured misinformation prevalence</span>
+          </div>
+        </div>
+
+        <div class="impact-note">
+          <strong>Nuanced impact:</strong> Fitness social media use had a significant positive effect on exercise behavior, 
+          increasing intrinsic motivation and exercise intention, with indirect effects accounting for 33.55% of the total impact 
+          (Xiao et al., 2025). However, exposure can also increase weight concern and comparison pressure (Blue, 2018).
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ================= Stats ================= -->
+
+  <section class="stats-section" id="stats">
+    <div class="container">
+  
+      <header class="stats-head">
+        <span class="stats-kicker">Stats • Evidence</span>
+        <h2 class="stats-title">The <span>misinformation</span> problem is real</h2>
+        <p class="stats-subtitle">
+          Fitness content spreads fast — but not all of it is safe or evidence-based.
+          These numbers show how common misleading advice is.
+        </p>
+      </header>
+  
+      <div class="stats-layout">
+  
+        <!-- LEFT: BIG STAT VISUAL -->
+        <div class="stats-hero">
+          <div class="stats-hero-top">
+            <span class="stats-chip">CBC News • Oct 5, 2024</span>
+            <span class="stats-chip ghost">Australia Study</span>
+          </div>
+  
+          <div class="big-stat">
+            <div class="big-num">60<span>%</span></div>
+            <p class="big-desc">
+              of <strong>200</strong> fitness influencer videos
+              presented <strong>misleading or harmful information</strong>.
+            </p>
+          </div>
+  
+          <div class="scanline" aria-hidden="true"></div>
+  
+          <div class="micro-grid">
+            <div class="micro-box">
+              <div class="micro-label">Videos analyzed</div>
+              <div class="micro-value">200</div>
+            </div>
+            <div class="micro-box">
+              <div class="micro-label">Misleading/harmful</div>
+              <div class="micro-value">60%</div>
+            </div>
+            <div class="micro-box">
+              <div class="micro-label">Platform effect</div>
+              <div class="micro-value">High reach</div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- RIGHT: CREDIBILITY + METER -->
+        <div class="stats-side">
+  
+          <div class="cred-panel">
+            <div class="cred-title">
+              <span class="pulse-dot"></span>
+              Credibility Check
+            </div>
+  
+            <p class="cred-text">
+              “Ninety-five per cent of the people who were posting the videos didn’t actually have relevant health,
+              fitness or nutrition credentials.”
+            </p>
+  
+            <div class="cred-cite">
+              Samantha Pryde (PhD candidate, Flinders University) • via CBC News
+            </div>
+  
+            <div class="cred-meter">
+              <div class="meter-top">
+                <span>Qualified credentials</span>
+                <span class="bad">Low</span>
+              </div>
+  
+              <div class="meter-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5">
+                <span class="meter-good" style="width:5%"></span>
+                <span class="meter-bad" style="width:95%"></span>
+                <span class="meter-pin" style="left:5%"></span>
+              </div>
+  
+              <div class="meter-legend">
+                <span class="lg good">5% credible</span>
+                <span class="lg bad">95% no relevant credentials</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- MINI INFOGRAPHIC STRIPS -->
+          <div class="stat-strips">
+            <div class="strip">
+              <div class="strip-icon">⚠️</div>
+              <div class="strip-text">
+                <strong>Misinformation spreads fast</strong>
+                <span>Fitness tips look “professional” even when they aren’t.</span>
+              </div>
+            </div>
+  
+            <div class="strip">
+              <div class="strip-icon">🧠</div>
+              <div class="strip-text">
+                <strong>Confidence ≠ correctness</strong>
+                <span>Trends can feel motivating while still being unsafe.</span>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <footer class="stats-footnote">
+        <span class="footnote-dot"></span>
+        Source: Jennifer Yoon, “Getting fitness tips on social media can be harmful — but it doesn’t have to be.”
+        CBC News (Oct. 5, 2024).
+      </footer>
+  
+    </div>
+  </section>
+  
+    <!-- ================= Prevention ================= -->
+<section class="prevention" id="prevention">
+  <div class="prevention-wrap">
+
+    <!-- Top Heading -->
+    <div class="prevention-head">
+      <p class="prevention-kicker">Prevention</p>
+      <h2 class="prevention-title">
+        Stay <span>informed</span> and intentional.
+      </h2>
+      <p class="prevention-sub">
+        Preventing harm requires a balanced and educational approach rather than discouraging social media use entirely.
+      </p>
+    </div>
+
+    <!-- Main Split Layout -->
+    <div class="prevention-grid">
+
+      <!-- LEFT: Strategies -->
+      <div class="prevention-block">
+        <h3 class="prevention-h3">Prevention strategies</h3>
+
+        <div class="prevention-list">
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Media literacy</p>
+              <p class="desc">
+                Media literacy skills should be taught to users so they can assess the reliability of fitness content, spot false information, and challenge false representations of bodies and performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Encourage diverse content</p>
+              <p class="desc">
+                Encouraging exposure to diverse content that represents different body types, abilities,
+                and fitness levels helps shift the focus from appearance to health and functionality.
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Supportive communities</p>
+              <p class="desc">
+                Fostering supportive online communities that emphasize well-being, progress, and inclusivity
+                can reduce harmful comparisons and promote healthier engagement.
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Spend less time online</p>
+              <p class="desc">
+                Spend less time on social media to reduce exposure to harmful content.
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Avoid unreliable content</p>
+              <p class="desc">
+                Avoid negative and unrealistic content that may cause mental harm (comparison, anxiety, depression)
+                and physical harm (taking fitness advice from unreliable sources).
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Educate & verify</p>
+              <p class="desc">
+                Educate yourself about sports and check multiple sources of information. Verify fitness
+                information to prevent injury (for example, trying a new machine at the gym without knowing
+                the right technique and getting hurt as a result).
+              </p>
+            </div>
+          </div>
+
+          <div class="prevention-item">
+            <span class="dot"></span>
+            <div>
+              <p class="label">Think critically</p>
+              <p class="desc">
+                Think critically and incorporate asking questions when watching content. Use critical thinking
+                tools to determine whether the source is reliable to prevent misinformation.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT: Goal -->
+      <div class="prevention-block prevention-goal">
+        <h3 class="prevention-h3">The goal</h3>
+
+        <p class="goal-text">
+          Critically assess the online content and recognize portrayals of bodies. Approach information with a critical eye. The primary goal is to empower individuals to critically assess online fitness content and recognize how bodies and exercise are portrayed on social media. This includes approaching information with a critical eye, valuing health and functionality over appearance, and understanding that fitness looks different for everyone.
+        </p>
+
+        <div class="goal-mini">
+          <div class="mini-line"></div>
+          <p>
+            By promoting thoughtful consumption of content and encouraging diversity, the goal is to support
+            positive physical and mental health outcomes while maintaining the motivational benefits of social media.
+            Encourage the consumption of diverse content that showcases different body types and fitness levels,
+            and appreciate the value of health over appearance. Foster supportive online communities.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Practical Steps -->
+    <div class="steps">
+      <h3 class="prevention-h3">Practical steps</h3>
+
+      <ul class="steps-list">
+        <li>
+          Limit daily social media use to reduce constant comparison and information overload.
+        </li>
+        <li>
+          Seek exercise knowledge from qualified professionals such as coaches, trainers, or healthcare providers.
+        </li>
+        <li>
+          Focus on the functional benefits of exercise rather than aesthetic outcomes.
+        </li>
+        <li>
+          Be sensible about intensity, recovery, and individual needs to prevent injury and burnout.
+        </li>
+      </ul>
+    </div>
+
+    <!-- WHO / WHAT / WHY -->
+    <div class="questions">
+      <h3 class="prevention-h3">When you see a fitness video, ask:</h3>
+
+      <div class="q-grid">
+
+        <div class="q">
+          <p class="q-title">Who?</p>
+          <p class="q-desc">
+            Who is the producer of that source? Are they legitimate, reliable, and credible?
+          </p>
+        </div>
+
+        <div class="q">
+          <p class="q-title">What?</p>
+          <p class="q-desc">
+            What are they promoting? Are they promoting genuine fitness advice or just themselves and their bodies?
+          </p>
+        </div>
+
+        <div class="q">
+          <p class="q-title">Why?</p>
+          <p class="q-desc">
+            What is the motive behind the video? Does the person uploading the video gain something
+            by you going to the gym after seeing this, messaging them, or gaining followers?
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- ===============Action ================= -->
+    <section id="action">
+      <div class="action-wrap">
+    
+        <p class="action-kicker">Take Action</p>
+    
+        <h2 class="action-title">
+          Be Conscious. <span>Be Critical.</span> Be Informed.
+        </h2>
+    
+        <p class="action-intro">
+          Our campaign targets individuals who are active on social media and particularly vulnerable to body image pressure and misinformation. This audience is at a critical stage of physical development and identity formation, making accurate information and positive messaging especially important.
+        </p>
+    
+        <div class="action-grid">
+    
+          <div class="action-block">
+            <h3>Key Message</h3>
+            <p>
+              Social media can have productive and positive content, but it is important to be conscious of misinformation regarding sports activities that could potentially harm both the physical and mental health of a person.
+            </p>
+          </div>
+    
+          <div class="action-block highlight">
+            <h3>Call to Action</h3>
+            <p>
+              Learn to differentiate between professional and unprofessional fitness advice, and always look and verify information on social media through multiple reliable sources.
+            </p>
+          </div>
+    
+        </div>
+    
+        
+    
+      </div>
+    </section>
+    
+  <script src="script.js"></script>
+</body>
+</html>
